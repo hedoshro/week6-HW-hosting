@@ -1,0 +1,88 @@
+body {
+  border: 1px solid black;
+  width: 75%;
+  padding: 15px;
+  margin: 50px;
+}
+nav {
+  position: relative;
+  top: 5px;
+}
+input {
+  font-family: "Roboto", sans-serif;
+  font-size: xx-small;
+}
+
+.city {
+  position: relative;
+  top: 5px;
+  text-align: center;
+  font-size: larger;
+  padding: 10px 14px;
+  font-family: "Roboto", sans-serif;
+  left: 65px;
+}
+.city:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: rgb(16, 16, 101);
+}
+.btn-success {
+  margin-left: 15px;
+  background-color: #146e43;
+}
+.btn-success:hover {
+  border-color: #146e43;
+  color: #146e43;
+  background-color: #fff;
+}
+.navbar {
+  position: relative;
+  left: 30px;
+}
+
+.moment {
+  position: relative;
+  top: 15px;
+}
+.location {
+  left: -50px;
+  font-size: small;
+}
+.detail {
+  position: relative;
+  top: -20px;
+  font-size: medium;
+}
+.detail-1 {
+  position: relative;
+  top: -15px;
+  font-weight: bold;
+}
+.emoji {
+  font-size: 50px;
+  position: relative;
+  left: -140px;
+}
+.details {
+  position: relative;
+
+  right: 300px;
+  top: -76px;
+  font-size: small;
+}
+.card-title {
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+}
+.card-text {
+  font-size: 22px;
+}
+.card-body:hover {
+  border: 5px solid rgb(241, 157, 31);
+  background-color: rgb(166, 204, 237);
+}
+.footer {
+  position: relative;
+  bottom: -45px;
+}
