@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>weather framework</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="container all-city text-center">
+        <div class="row row-cols-auto">
+          <div class="col city">Rasht</div>
+          <div class="col city">Shiraz</div>
+          <div class="col city">Isfahan</div>
+          <div class="col city">Ahvaz</div>
+        </div>
+      </div>
+      <nav class="navbar">
+        <div class="container-fluid">
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Enter a city..."
+              aria-label="search"
+              id="city"
+            />
+
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+
+            <button
+              type="button"
+              class="btn success btn-success"
+              id="current-button"
+            >
+              current
+            </button>
+          </form>
+        </div>
+      </nav>
+
+      <div class="container moment text-center">
+        <div class="row align-items-end">
+          <div class="col">
+            <div class="container location text-center">
+              <div class="col detail" id="tehran">tehran</div>
+              <div class="col detail" id="today">Wednesday</div>
+
+              <div class="col detail-1">
+                <span id="description">Haze</span>
+              </div>
+              <div class="col detail-1">
+                <span id="clock">11:00</span>
+              </div>
+            </div>
+          </div>
+          <div class="col emoji" id="seventeen">17°C</div>
+          <div class="col">
+            <div class="container details text-center">
+              <div class="col" id="humid">Humidity:62%</div>
+              <div class="col" id="wind">Wind:7mph</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="container days text-center">
+        <div class="row cols g-2 g-lg-3">
+          <div class="col">
+            <div class="p-5">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Thu</h5>
+                  <p class="card-text">☀️</p>
+                  <p class="card-text">8° 4°</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="p-5">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Fri</h5>
+                  <p class="card-text">🌧️</p>
+                  <p class="card-text">8° 2°</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="p-5">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Sat</h5>
+                  <p class="card-text">🌥️</p>
+                  <p class="card-text">9° 2°</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="p-5">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Sun</h5>
+                  <p class="card-text">🌥️</p>
+                  <p class="card-text">9° 2°</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="p-5">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Mon</h5>
+                  <p class="card-text">🌥️</p>
+                  <p class="card-text">9° 2°</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <small>
+        <a
+          href="https://github.com/hedoshro/week6-HW-weatherapp-Hosting"
+          target="_blank"
+          >Open-source code</a
+        >
+        by Hedi Rahimi
+      </small>
+    </footer>
+    <script src="action.js"></script>
+  </body>
+</html>
